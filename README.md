@@ -1,7 +1,7 @@
 # polyp-decision-aid
 BSG/ACPGBI decision aid for managing polyps in those with limited life expectancy
 
-Description.
+Description
 
 A prototype clinical decision aid based on the British Society of Gastroenterology (BSG) and Association of Coloproctologists of Great Britain and Ireland (ACPGBI) guidance on the management of colorectal polyps in patients with limited life expectancy. The tool calculates an age-adjusted Charlson Comorbidity Index (CCI), incorporates polyp size and antithrombotic status, and provides an estimated risk-benefit assessment based on the published guidance model.
 
