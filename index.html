@@ -4,6 +4,10 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>BSG/ACPGBI Limited Life Expectancy Polyp Decision Aid</title>
+<!--
+Version 0.2.1, June 2026.
+Changes from v0.2: corrected RAG threshold logic to match guidance table wording, prevented double-counting of hierarchical Charlson categories, restored footer feedback/methodology links.
+-->
 <style>
   :root{--green:#147a3d;--amber:#b56b00;--red:#a51d2d;--bg:#f7f7f8;--card:#fff;--ink:#1f2937;--muted:#6b7280;--line:#e5e7eb;--blue:#2563eb;}
   body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;background:var(--bg);color:var(--ink);}
@@ -29,7 +33,7 @@
 </head>
 <body>
 <header>
-  <h1>BSG/ACPGBI Limited Life Expectancy Polyp Decision Aid — prototype v0.2</h1>
+  <h1>BSG/ACPGBI Limited Life Expectancy Polyp Decision Aid — prototype v0.2.1</h1>
   <p>For clinic discussion: calculates age-adjusted Charlson Comorbidity Index, applies the modelled risk–benefit table, and generates copy/paste wording. Not a substitute for clinical judgement, MDT decision-making or informed consent.</p>
   <div class="headerlinks">
     Guidance: <a href="https://doi.org/10.1136/gutjnl-2025-335047" target="_blank" rel="noopener">BSG/ACPGBI guidance on colorectal polyps in patients with limited life expectancy</a>
@@ -95,7 +99,14 @@
 </main>
 <footer>
   <p><b>About:</b> Prototype clinical decision aid developed from the BSG/ACPGBI guidance on management of colorectal polyps in patients with limited life expectancy. Outputs are based on published modelling assumptions and should be interpreted alongside patient factors, frailty, comorbidity, polyp characteristics and patient preferences.</p>
-  <p><b>Disclaimer:</b> This tool supports but does not replace clinical judgement, MDT discussion or informed consent. No patient information is transmitted, stored or retained by this static browser-based tool. Version 0.2, June 2026.</p>
+
+  <p><b>Disclaimer:</b> This tool supports but does not replace clinical judgement, MDT discussion or informed consent. No patient information is transmitted, stored or retained by this static browser-based tool.</p>
+
+  <p>
+    <b>Version:</b> 0.2.1 (June 2026) |
+    <a href="mailto:nick.burr@nhs.net?subject=BSG Polyp Decision Aid Feedback">Feedback</a> |
+    <a href="https://github.com/nickburr-tech/polyp-decision-aid" target="_blank" rel="noopener">About this tool / methodology and caveats</a>
+  </p>
 </footer>
 <script>
 const conditions = [
