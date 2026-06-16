@@ -17,5 +17,5 @@ This tool is based on published guideline recommendations and modelling assumpti
 
 The estimates generated are modelled figures derived from the guidance and should not be considered definitive predictions of individual patient outcomes. Clinical decisions remain the responsibility of the treating clinician and patient.
 
-No patient data are stored or transmitted by this tool
+No patient data are stored or transmitted by this tool.
 
