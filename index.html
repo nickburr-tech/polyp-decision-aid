@@ -116,10 +116,10 @@ Changes from v0.2: corrected RAG threshold logic to match guidance table wording
 </footer>
 <script>
 const conditions = [
-  ['mi','Previous MI',1,['myocardial infarction','\\bmi\\b','heart attack'],'History of definite or probable myocardial infarction, usually based on ECG changes and/or enzyme changes.'],
-  ['chf','Heart failure',1,['heart failure','chf','lvf','congestive cardiac failure','ccf'],'Congestive heart failure: exertional or paroxysmal nocturnal dyspnoea responding to digitalis, diuretics or afterload-reducing medication.'],
+  ['mi','Previous MI',1,['myocardial infarction','\\bmi\\b','heart attack'],'History of definite or probable myocardial infarction'],
+  ['chf','Heart failure',1,['heart failure','chf','lvf','congestive cardiac failure','ccf'],'Congestive heart failure: exertional or paroxysmal nocturnal dyspnoea, diuretics or afterload-reducing medication.'],
   ['pvd','Peripheral vascular disease',1,['peripheral vascular','claudication','aneurysm','pvd','pad','peripheral arterial disease','vascular bypass','gangrene'],'Intermittent claudication, previous bypass for chronic arterial insufficiency, gangrene/acute arterial insufficiency, or untreated thoracic/abdominal aneurysm ≥6 cm.'],
-  ['cva','Stroke/TIA',1,['stroke','cva','tia','transient ischaemic','transient ischemic','cerebrovascular accident'],'Previous CVA with minor/no residua or transient ischaemic attack.'],
+  ['cva','Stroke/TIA',1,['stroke','cva','tia','transient ischaemic','transient ischemic','cerebrovascular accident'],'Previous CVA with minor/no residual or transient ischaemic attack.'],
   ['dementia','Dementia',1,['dementia','alzheimer','alzheimer’s','vascular dementia','lewy body dementia','mixed dementia','frontotemporal dementia'],'Chronic cognitive deficit consistent with dementia. Do not automatically score mild cognitive impairment, forgetfulness or isolated memory symptoms.'],
   ['hemi','Hemiplegia/paraplegia',2,['hemiplegia','paraplegia'],'Hemiplegia or paraplegia.'],
   ['pulm','Significant chronic pulmonary disease',1,['copd','chronic obstructive pulmonary','emphysema','bronchiectasis','pulmonary fibrosis','interstitial lung disease','\\bild\\b','severe asthma','brittle asthma','steroid-dependent asthma','steroid dependent asthma'],'COPD, emphysema, pulmonary fibrosis/ILD, bronchiectasis, or severe chronic asthma requiring long-term treatment. Do not automatically score mild/intermittent asthma.'],
