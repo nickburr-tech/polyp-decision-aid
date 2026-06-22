@@ -77,7 +77,7 @@ Changes from v0.2: corrected RAG threshold logic to match guidance table wording
 
     <section class="card">
       <h2>Cut-and-paste extractor</h2>
-      <div class="extractWarn"><b>Experimental convenience feature:</b> this keyword scan may miss diagnoses or tick incorrect boxes because it cannot reliably interpret context, negation, family history, cancer type, severity or resolved disease. It deliberately avoids broad cancer terms such as “carcinoma” because these can incorrectly capture BCC/SCC skin lesions. Always review the Charlson checklist before calculating.</div>
+      <div class="extractWarn"><b>Clinical review reminder:</b> Automatically identified comorbidities should be reviewed and confirmed before calculating the Charlson score. Clinical correspondence may contain historical, resolved or ambiguous diagnoses that require clinician interpretation.</div>
       <textarea id="paste" placeholder="Example: 82 year old. 15 mm polyp. On apixaban. CKD stage 4, COPD, TIA..."></textarea>
       <button class="secondary" onclick="parseText()">Extract likely fields</button>
       <div id="parseSummary" class="muted" style="margin-top:8px"></div>
